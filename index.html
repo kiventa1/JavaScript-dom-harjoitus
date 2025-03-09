@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+</head>
+<body class="container">
+    <div><h1><img id="logo" src="todo.png" alt="logo">To-do</h1></div>
+    <div id="rivitys"><h2 id="otsikko">Nimetön lista</h2> <button class="vaihdanimea" onclick="nimeaLista()"><img width=28; src="kyna.png"></button></div>
+
+    <div><button class="napit" onclick="suodata('kaikki')">Kaikki</button><button class="napit" onclick="suodata('valmiit')">Valmiit</button><button class="napit" onclick="suodata('kesken')">Kesken</button>
+    <table>
+        <thead>
+            <tr>
+                <th>✔</th> <!-- Checkbox-sarake -->
+                <th>Tehtävän nimi</th> <!-- Tehtävän nimi -->
+                <th>X</th> <!-- Poista-nappi -->
+            </tr>
+        </thead>
+        <tbody id="tehtavalista">
+            <!-- Tehtävät lisätään tänne JavaScriptillä -->
+        </tbody>
+    </table></div>
+
+    <div>
+        <input placeholder="Kirjoita tehtävän nimi" id="rivi"><button class="oklisaa" onclick="addRivi()">Lisää tehtävä</button>
+    </div>
+
+    <script src="script.js">window.onload = lataaLocalStoragesta();</script>
+
+    <script>window.onload = lataaLocalStoragesta();</script>
+   
+</body>
+</html>

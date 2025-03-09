@@ -1,0 +1,145 @@
+
+body {
+    font-size: 1em; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 80%;     
+    margin: 0 auto; 
+    background-color: #eee6e6;
+    padding: 20px;
+  }
+
+#logo {
+    width: 80px;
+    max-width: 80%;
+    height: auto;   
+    vertical-align: middle; /* Keskittää kuvan tekstin kanssa */
+}
+
+/*otsikon rivitys napin kanssa samalle riville */
+#rivitys {
+   display:flex;
+}
+
+/* oranssit napit */
+.napit { 
+    margin-right: 0.5em;
+    font-size: small; 
+    padding: 0.6em 1em; 
+    width: auto; 
+    background-color: rgb(235, 174, 127);
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out;
+    display: inline-block; /* Jotta nappi käyttäytyy paremmin */
+}
+
+.napit:hover {
+    background-color: rgb(230, 150, 100);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.napit:active {
+    background-color: rgb(230, 150, 100);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transform: scale(0.98);
+}
+
+/* input kenttä */
+input {
+    width: 85%;
+    padding: 0.5em 1em; 
+    font-size: 16px;
+    margin-top: 0.4em;
+    border: 2px solid #ccc; 
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    outline: none; /* Poistaa oletuskorostuksen */
+}
+
+/* chekcboxin muotoilu */
+[type=checkbox]:checked {
+accent-color: green;
+}
+
+
+/* vaihda nimeä */
+.vaihdanimea {
+    border: none;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-radius: 100%;
+    background-color: floralwhite;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.vaihdanimea:hover {
+    background-color:  rgb(230, 150, 100); 
+    border-color: rgb(140, 120, 100);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.3);
+}
+
+
+/* Lisää tehtävä */
+.oklisaa {
+    width: 13em;
+    font-size: 0.9em; 
+    margin-top: 1em;
+    margin-right: 0.5em;
+    margin-bottom: 0.7em;
+    padding: 0.6em 1em; 
+    color: whitesmoke;
+    background-color: rgb(10, 9, 8);
+    border: 2px solid rgb(112, 96, 79); 
+    border-radius: 8px; 
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.oklisaa:hover {
+    background-color: rgb(30, 29, 28);
+    border-color: rgb(140, 120, 100);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.4em;
+    margin-bottom: 0.6em;
+}
+
+th, td {
+    border: 1px solid rgb(235, 174, 127);
+    padding: 6px;
+    text-align: left;
+}
+th {
+    background-color: #ffffff;
+    text-align: center;
+}
+td {
+    text-align: center; 
+    background-color: white; 
+    color: black; 
+    }
+
+::placeholder {
+    font-size: 1em;
+    font-style: italic;
+}
