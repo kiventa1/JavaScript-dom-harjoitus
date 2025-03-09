@@ -5,7 +5,8 @@ body {
 }
 
 .container {
-    width: 80%;     
+    width: 80%; 
+    max-width: 500px;    
     margin: 0 auto; 
     background-color: #eee6e6;
     padding: 20px;
